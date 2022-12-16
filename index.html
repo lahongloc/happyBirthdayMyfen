@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+</head>
+<body>
+    <div class="lock">
+        <h3 >Password<span style="font-size: 10px;">(your birthday)</span></h3>
+        
+        <input onkeypress="return runScript(event)" style="margin-top: 3.5rem; outline: none;" type="password" name="text" class="input" placeholder="dd/mm/yyyy">
+        <button onclick="checkPass()" class="cta">
+            <span>Submit now</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+    </div>
+    <div style="z-index: 5; display: none;" class="main_content">
+        <img onclick="anh1()" src="./images/gift.jpg" alt="">
+        <!-- <img onclick="anh2()" src="./images/gift.jpg" alt=""> -->
+        <!-- <img src="./images/gift.jpg" alt="">
+        <img src="./images/gift.jpg" alt="">
+        <img src="./images/gift.jpg" alt=""> -->
+    </div>
+    <div class="bg">
+        <audio style="display:none ;" class="mus" controls loop>
+            <source src="./images/masiu-x-masew-nhac-khong-loi-plain-audio.mp3">
+        </audio>
+        <div class="back" style="background-color: white; color: black; font-weight: 700; width: 5rem;z-index: 50; position: fixed; top: 3em; left: -0.5rem; text-align: right; height: 2rem; padding: 5px; border-radius: 5px; cursor: pointer; border: 2px solid black;">
+            <p>Back >></p>
+        </div>
+        <img src="./images/kk.jpg" alt="">
+        <img src="./images/hh.jpg" alt="">
+        <img src="./images/oo.jpg" alt="">
+        <img src="./images/z3961416176251_70a3a7b240a8207f8000e429f14e4573.jpg" alt="">
+        <img src="./images/z3961416175315_df43c4e1105757def2cd14f70bd387ac.jpg" alt="">
+        <img src="./images/z3961416167879_9eb1f4d19a0fa50ad7c460464ad3c3cc.jpg" alt="">
+        <img src="./images/z3961416166796_9e115dfa8938a8413e20d4d8ccd61f28.jpg" alt="">
+        <img src="./images/z3961416165454_df4096f75cfa9829ad7a52f219eb01c6.jpg" alt="">
+        <img src="./images/z3961416146436_1458eaa2bb845c234dc79a3c36738155.jpg" alt="">
+        <img src="./images/z3961416144930_7b31e6a9968cee88433b37ad9148e635.jpg" alt="">
+        <img src="./images/z3961416137426_c11f375cced9123a98217d9c4218db88.jpg" alt="">
+        <img src="./images/z3961416136174_2efc95c9dd7fe224af658d9a3d1d32f4.jpg" alt="">
+        <img src="./images/z3961405591479_fca9ba9c05d75d3c8178b653cc10cf05.jpg" alt="">
+        <img src="./images/z3961405588625_f97a8fcb15c685c719b194fc7af479f8.jpg" alt="">
+        <img src="./images/z3961405582056_fd04bbb7c2defe59d7b5003836224770.jpg" alt="">
+        <img src="./images/z3961405579402_81fefe4628ce9858ca9f69738b09e4ef.jpg" alt="">
+        <img src="./images/z3961405578428_91c4518db8efb89bce3318928e76657c.jpg" alt="">
+        <img src="./images/z3961405577098_e1c25099510ede028384944b34781e80.jpg" alt="">
+        <img src="./images/z3961405574969_f0cefb9a6b4e6fdc5c12d6f87b0ce763.jpg" alt="">
+        <img src="./images/z3961405535860_a14ad3431f823c25989b366ff09b834c.jpg" alt="">
+        <img src="./images/z3961405534716_0a53e1ddccfaf25c625355e8481d705d.jpg" alt="">
+    </div>
+    <div class="show">
+        <div class="flip-card" >
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img class="title pic" src="./images/1.jpg" alt="">
+                </div>
+                <div class="flip-card-back" style="overflow: hidden; padding: 5rem 1rem 0 1rem; border: 2px dashed black;">
+                    <!-- <img class="title" src="./images/1.jpg" alt=""> -->
+                    <img style="width: 30%; position: absolute; top: -1rem; right: 0;" src="./images/nooo.png" alt="">
+                    <p class="title">
+                        <h3><b>Happy Birthday bạn Trân!</b></h3>
+                        <br>
+                        <p style="font-weight: 500;">Hơi muộn, nhưng vẫn chúc bạn Trân sinh nhật vui vẻ, ngày càng xinh đẹp tuyệt trần. Tuổi mới sẽ có những chặng đường mới, chúc bạn Trân luôn thuận buồm xuôi gió và sẽ chinh phục được mục đích, trở thành lý tưởng mà bản thân vẫn luôn hướng tới <3</p>
+                        <br><br>
+                        <p>From Loc with love <i class="fa-solid fa-heart"></i></p>
+                        <br><br>
+                        <img style="width: 20%; margin: auto;" src="./images/bsn.jpg" alt="">
+                    </p>
+                    <div class="dim" style="position: absolute; bottom: 1rem; right: 1rem; padding: 5px; border-radius: 5px; cursor: pointer; border: 2px solid black;">
+                        <p>Click >></p>
+                    </div>
+                    <!-- <p>Leave Me</p> -->
+                </div>
+            </div>
+        </div>
+        <!-- <img src="./images/z3961416176251_70a3a7b240a8207f8000e429f14e4573.jpg" alt=""> -->
+    </div>
+</body>
+<script src="./JS/main.js"></script>
+</html>
