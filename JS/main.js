@@ -73,7 +73,7 @@ var i = 1;
 var pic = document.querySelector(".pic");
 setInterval(function() {
     pic.setAttribute("src", `./images/${i++}.jpg`)
-    if(i > 5) i =1;
+    if(i > 9) i =1;
 }, 1000)
 
 
